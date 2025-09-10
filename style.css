@@ -1,0 +1,277 @@
+/* Basic Reset and Typography */
+{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Layout and Containers */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#hero, #contact {
+    background-color: #fff;
+}
+
+/* Header and Navigation */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav a {
+    color: #fff;
+    font-weight: 400;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    background-color: #34495e;
+}
+
+/* Hero Section */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3498db;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+.cta-button {
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #2980b9;
+}
+
+/* About Section */
+#about {
+    background-color: #ecf0f1;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.bio-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #fff;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background: #ecf0f1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #ecf0f1;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card h3, .project-card p {
+    padding: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 15px 15px;
+    background: #3498db;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+#contact-form button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+/* Utility Class */
+.section-heading {
+    margin-bottom: 2rem;
+}
